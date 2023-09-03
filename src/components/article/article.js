@@ -111,14 +111,14 @@ function articleMaker(articleObj) {
   articleWrapper.appendChild(articleParagraphThree);
   articleWrapper.appendChild(expandButton);
 
-  articleWrapper.textContent = articleObj.title;
+  /*articleWrapper.textContent = articleObj.title;
   articleDate.textContent = articleObj.date;
   articleParagraphOne.textContent = articleObj.firstParagraph;
   articleParagraphTwo.textContent = articleObj.secondParagraph;
   articleParagraphThree.textContent = articleObj.thirdParagraph;
-  expandButton.textContent = "+";
+  expandButton.textContent = "+"; */
 
-  expandButton.add('click', () => {
+  expandButton.addEventListener('click', () => {
     articleWrapper.classList.toggle('article-open');
   })
   return articleWrapper;
